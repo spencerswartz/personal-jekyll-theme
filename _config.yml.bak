@@ -131,7 +131,7 @@ syntax-highlight: True
 ############
 
 events:
-  - image: "/img/timeline/spidertocat.png"
+  - image: "/img/timeline/UI-seal.png"
     date: "May 2014"
     description: "BA - Infromatics - Uni. of Iowa"
   - image: "/img/timeline/baracktocat.jpg"
@@ -169,10 +169,10 @@ author_blurb_image: "/img/author.png"
 social:
   - title: "linkedin"
     url: "https://www.linkedin.com/in/spencer-swartz/"
-#  - title: "github"
-#    url: "https://github.com/spencerswartz"
-  - title: "kaggle"
-    url: "https://www.kaggle.com/swartzy"
+  - title: "github"
+    url: "https://github.com/spencerswartz"
+#  - title: "kaggle"
+#    url: "https://www.kaggle.com/swartzy"
   - title: "facebook"
     url: "https://www.facebook.com/spencer.swartz"
   - title: "twitter"
