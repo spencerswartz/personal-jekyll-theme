@@ -30,8 +30,8 @@ force-https: True
 
 lang: "en"
 author: "Spencer Swartz"
-title: "{ John Smith }"
-description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
+title: "{ Spencer Swartz }"
+description: "data woo hoo"
 keywords: "smith, jones, personal, jekyll, theme"
 favicon: "/img/favicon.ico"
 
