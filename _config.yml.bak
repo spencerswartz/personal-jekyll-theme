@@ -160,8 +160,8 @@ email: "spencer.swartz@gmail.com"
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "Spencer Swartz is a Data Scientist living in Iowa. When he's not playing around with data, he's usualy trying a new craft beer!"
-author_blurb_image: "/img/author.png"
+author_blurb: "Spencer Swartz is a Data Scientist living in Iowa City, Iowa. When he's not playing around with data, he's usualy trying a new craft beer!"
+author_blurb_image: "/img/spencer_burned.png"
 
 ##################
 # Social Buttons #
