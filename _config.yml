@@ -167,8 +167,8 @@ author_blurb_image: "/img/author.png"
 ##################
 
 social:
-	- title: "linkedin"
-		url: "https://www.linkedin.com/in/spencer-swartz/"
+  - title: "linkedin"
+    url: "https://www.linkedin.com/in/spencer-swartz/"
   - title: "facebook"
     url: "https://www.facebook.com/spencer.swartz"
   - title: "twitter"
