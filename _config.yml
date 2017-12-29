@@ -66,7 +66,7 @@ lines: # You can add HTML Tags in the Text
 # in the end of the url just before '&type' is your user id.
 # Note: fbid is not the same as user id and user id only contains numbers
 
-me-img: "https://graph.facebook.com/511039884/picture?type=large&width=500&height=500"
+# me-img: "https://graph.facebook.com/511039884/picture?type=large&width=500&height=500"
 
 # To use github profile pic uncomment the following line and replace 'user_name'
 # with your github user name.
@@ -78,7 +78,7 @@ me-img: "https://graph.facebook.com/511039884/picture?type=large&width=500&heigh
 # You can create the email hash by using an online tool like 'http://www.md5hashgenerator.com/'
 # just enter your email and it will generate the hash.
 
-# me-img: "https://www.gravatar.com/avatar/email_hash?s=500"
+# me-img: "https://www.gravatar.com/avatar/90cfd3dd6a9fb9b43e883140b45611cd?s=500"
 
 ##############################
 # Color the browser elements #
