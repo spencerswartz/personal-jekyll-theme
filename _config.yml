@@ -149,7 +149,7 @@ timeline-img: "/img/timeline/default.png"
 # Contact #
 ###########
 
-email: "your@email.here"
+email: "spencer.swartz@gmail.com"
 
 ################
 # Author Blurb #
@@ -169,8 +169,8 @@ author_blurb_image: "/img/author.png"
 social:
   - title: "linkedin"
     url: "https://www.linkedin.com/in/spencer-swartz/"
-  - title: "github"
-    url: "https://github.com/spencerswartz"
+#  - title: "github"
+#    url: "https://github.com/spencerswartz"
   - title: "kaggle"
     url: "https://www.kaggle.com/swartzy"
   - title: "facebook"
