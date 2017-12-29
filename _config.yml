@@ -131,15 +131,16 @@ syntax-highlight: True
 ############
 
 events:
-  - image: "/img/timeline/UI-seal.png"
-    date: "May 2014"
-    description: "BA - Infromatics - Uni. of Iowa"
+  - image: "/img/timeline/UWlax-seal.png"
+    date: "May 2018"
+    description: "MS - Data Science - University of Wisconsin - La Crosse"
   - image: "/img/timeline/ACT_logo.png"
     date: "May 2014 - Present"
     description: "Data Analyst @ ACT"
-  - image: "/img/timeline/UWlax-seal.png"
-    date: "May 2018"
-    description: "MS - Data Science - Uni. of Wisconsin - La Crosse"
+  - image: "/img/timeline/UI-seal.png"
+    date: "May 2014"
+    description: "BA - Infromatics - University of Iowa"
+
 
 # First image of the Timeline
 
