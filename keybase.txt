@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/spencer_swartz
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://spencerswartz.github.io
+  * I am spencer_swartz (https://keybase.io/spencer_swartz) on keybase.
+  * I have a public key ASARzqQwwyQcylYjMg6-bXdQAdyHDCaegJBtoV3bye_TAgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012011cea430c3241cca5623320ebe6d775001dc870c269e80906da15ddbc9efd3020a",
+      "host": "keybase.io",
+      "kid": "012011cea430c3241cca5623320ebe6d775001dc870c269e80906da15ddbc9efd3020a",
+      "uid": "9535878e09ed4ec01e3d807582951619",
+      "username": "spencer_swartz"
+    },
+    "merkle_root": {
+      "ctime": 1515700217,
+      "hash": "149851dc6747ef210f21793e698c8bb438aff31486eeb48e1abe245668456220d1abcc1a555b037a063db09331fb8ff431a761fd02af382278817fd3080c6463",
+      "hash_meta": "73622cbc4749cfc94ba22e22fd6c6d72ac8839342f2d68a1c591fc5b97ff1a9c",
+      "seqno": 1916480
+    },
+    "service": {
+      "hostname": "spencerswartz.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.38"
+  },
+  "ctime": 1515700268,
+  "expire_in": 504576000,
+  "prev": "a95a03715d3f980c018b1a74543d952172145429228dfda7b2adee0ce0a65128",
+  "seqno": 8,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgEc6kMMMkHMpWIzIOvm13UAHchwwmnoCQbaFd28nv0wIKp3BheWxvYWTFA1V7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwMTFjZWE0MzBjMzI0MWNjYTU2MjMzMjBlYmU2ZDc3NTAwMWRjODcwYzI2OWU4MDkwNmRhMTVkZGJjOWVmZDMwMjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMTFjZWE0MzBjMzI0MWNjYTU2MjMzMjBlYmU2ZDc3NTAwMWRjODcwYzI2OWU4MDkwNmRhMTVkZGJjOWVmZDMwMjBhIiwidWlkIjoiOTUzNTg3OGUwOWVkNGVjMDFlM2Q4MDc1ODI5NTE2MTkiLCJ1c2VybmFtZSI6InNwZW5jZXJfc3dhcnR6In0sIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNTE1NzAwMjE3LCJoYXNoIjoiMTQ5ODUxZGM2NzQ3ZWYyMTBmMjE3OTNlNjk4YzhiYjQzOGFmZjMxNDg2ZWViNDhlMWFiZTI0NTY2ODQ1NjIyMGQxYWJjYzFhNTU1YjAzN2EwNjNkYjA5MzMxZmI4ZmY0MzFhNzYxZmQwMmFmMzgyMjc4ODE3ZmQzMDgwYzY0NjMiLCJoYXNoX21ldGEiOiI3MzYyMmNiYzQ3NDljZmM5NGJhMjJlMjJmZDZjNmQ3MmFjODgzOTM0MmYyZDY4YTFjNTkxZmM1Yjk3ZmYxYTljIiwic2Vxbm8iOjE5MTY0ODB9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoic3BlbmNlcnN3YXJ0ei5naXRodWIuaW8iLCJwcm90b2NvbCI6Imh0dHBzOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4zOCJ9LCJjdGltZSI6MTUxNTcwMDI2OCwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsInByZXYiOiJhOTVhMDM3MTVkM2Y5ODBjMDE4YjFhNzQ1NDNkOTUyMTcyMTQ1NDI5MjI4ZGZkYTdiMmFkZWUwY2UwYTY1MTI4Iiwic2Vxbm8iOjgsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RA6x0VisO3wmbtCgoeRkiA0l/vaQS4VFRclUkfyjWMnTo16nxJbyXNwYC7Fo8VYSFb1RiJRRkwMwnnnDGRF6vRB6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIIak7gLVEvaRghzhM4uxbUzwVp+iJ5COeLt502fq3FvCo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/spencer_swartz
+
+==================================================================
