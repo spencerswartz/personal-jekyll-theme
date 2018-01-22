@@ -55,8 +55,8 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "Working on a MS in Data Scinece"
-  - text: "Expected Graduation May, 2017"
+  - text: "MS in Data Scinece Cadidate"
+  - text: "Helping people see and understand their data"
 
 # me-img: "/img/jetpacktocat.png"
 
