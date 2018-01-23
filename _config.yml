@@ -57,7 +57,7 @@ delete-delay: 5000
 lines: # You can add HTML Tags in the Text
   - text: "MS in Data Scinece Cadidate"
   - text: "Helping people see and understand their data"
-
+  - text: "“Formulas are my formula for mula” - Ben Wyatt "
 # me-img: "/img/jetpacktocat.png"
 
 # To use facebook profile pic comment the previous line and uncomment the following
