@@ -55,7 +55,7 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "MS in Data Scinece Cadidate"
+  - text: "MS in Data Science Candidate"
   - text: "Helping people see and understand their data"
   - text: "“Formulas are my formula for mula” - Ben Wyatt "
 # me-img: "/img/jetpacktocat.png"
