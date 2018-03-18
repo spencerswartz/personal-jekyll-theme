@@ -8,7 +8,7 @@ tags: [ 'UWDS', 'Capstone','Brewers Association' ]
 
 I am happy to announce that over the last 2 or so months I have been working with [The Brewers Association](https://www.brewersassociation.org/) as a part of the Capstone course requirement through [The University of Wisconsin Masters of Science in Data Science program](https://datasciencedegree.wisconsin.edu/).
 
-![The Brewers Association Logo](https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwj8j43jy_bZAhWp34MKHYU_AvgQjRx6BAgAEAU&url=https%3A%2F%2Fwww.brewersassociation.org%2F&psig=AOvVaw2YbCpDOeXtD8TRTXiEEgKQ&ust=1521487234830739)
+![The Brewers Association Logo](https://www.brewersassociation.org/wp-content/uploads/2015/01/brewersassociation.png)
 
 The Brewers Association's purpose is to promote and protect American craft brewers, their beers and the community of brewing enthusiasts. With this project I hope to help the group to work towards this purpose by providing more insight into their social media efforts.
 
