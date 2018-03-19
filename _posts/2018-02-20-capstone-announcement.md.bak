@@ -19,10 +19,10 @@ This project focuses specifically on Twitter data, although all that will be don
 So why is The Brewer's Association (BA) interested in this? Well, it all stems from recent changes announced from various social media platforms as a response to the possibility of their platforms spreading fake news. BA has realized that these changes could have an effect on their social media campaigns in the coming future, and it would be beneficial to understand what their followers are interested in and what causes them to share BA posts.
 
 Overall there are 4 primary objectives for this project including the following:
-1. Gather BA relevant and related data from the Twitter developer API
-2. Use this data to analysis and create a dashboard/s answering the above specific questions identified by BA
-3. Research and Implement an algorithm to identify individuals that are accredited with a high level of influence with BA related content.
-4. The overall outcome of this project is to maintain or improve the effectiveness of BA's social media campaigns regardless of the changes of any given social media platform.
+1.	Gather BA relevant and related data from the Twitter developer API
+2.	Use this data to analysis and create a dashboard/s answering the above specific questions identified by BA
+3.	Research and Implement an algorithm to identify individuals that are accredited with a high level of influence with BA related content.
+4.	The overall outcome of this project is to maintain or improve the effectiveness of BA's social media campaigns regardless of the changes of any given social media platform.
 
 Please check back later for updates and possibly even some deep dives on various parts of the project in the near future
 
