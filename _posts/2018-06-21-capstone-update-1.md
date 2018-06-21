@@ -14,7 +14,7 @@ I will do my best to get the entire series out in the next couple of months. Thi
 
 ### (Re-)Introduction
 
-If you recall from my innitial post my entire capstone project revolves around the Twitter accounts for The Brewers Association (BA). The group actualy has three seperate accounts all targeting diffrent customers of BA you can see the handles and there description in the following table. Based on the descriptions of the handles we can start to understand the three audiences that BA is targeting. The @BrewersAssoc and @HomebrewAssoc handles are obviously targeting the members of the two organizations that are a part of BA. It makes sense to target them separately although they are both interested in the similar topic because more often than not laws governing members of both institutions are quite different at both the state and national level. The third, @craftbeerdotcom, is another example of BA market-ing directly to their customers’ customer. This handle is quite successful with over 56,000 followers and 10,000 tweets.
+If you recall from my innitial post my entire capstone project revolves around the Twitter accounts for The Brewers Association (BA). The group actualy has three seperate accounts all targeting diffrent customers of BA you can see the handles and there description in the following table. Based on the descriptions of the handles we can start to understand the three audiences that BA is targeting. The @BrewersAssoc and @HomebrewAssoc handles are obviously targeting the members of the two organizations that are a part of BA. It makes sense to target them separately although they are both interested in the similar topic because more often than not laws governing members of both institutions are quite different at both the state and national level. The third, @craftbeerdotcom, is another example of BA market-ing directly to their customers' customer. This handle is quite successful with over 56,000 followers and 10,000 tweets.
 
 | Twitter Handle        | Description           |
 | ------------- |-------------| 
@@ -24,11 +24,11 @@ If you recall from my innitial post my entire capstone project revolves around t
 
 # Data Gathering
 
-This phase of the project consists of gathering data from the Twitter API via the Python package Tweepy and parsing the information returned into relational columnar datasets. In the simplest of terms, this phase reaches out to Twitter and gathers roughly 3,500 of most recent tweets sent by each of BA’s three Twitter handles.
+This phase of the project consists of gathering data from the Twitter API via the Python package Tweepy and parsing the information returned into relational columnar datasets. In the simplest of terms, this phase reaches out to Twitter and gathers roughly 3,500 of most recent tweets sent by each of BA's three Twitter handles.
 
 ### Twitter API
 
-To be able to gather this data one must first understand what the Twitter API is, and what can be done with it. Specifically, there are three main requests for the API including; get, post, and streaming requests. For this project, we are only concerned with get requests. For a complete understanding, I recommend reading the API documents for the other two request types. But in brief, the following is a quick description, post requests allow developers to add, edit or delete the various artifacts that are a part of a user’s profile or tweets, and the streaming requests allows for a constant and real-time stream of various tweets base on criteria. Both of these calls are often used by developers to create third-party applications (Twitter, Inc., 2018).
+To be able to gather this data one must first understand what the Twitter API is, and what can be done with it. Specifically, there are three main requests for the API including; get, post, and streaming requests. For this project, we are only concerned with get requests. For a complete understanding, I recommend reading the API documents for the other two request types. But in brief, the following is a quick description, post requests allow developers to add, edit or delete the various artifacts that are a part of a user's profile or tweets, and the streaming requests allows for a constant and real-time stream of various tweets base on criteria. Both of these calls are often used by developers to create third-party applications (Twitter, Inc., 2018).
 
 Get requests allow developers to access the Twitter backend similar to that of a standard database. We can send queries based on specific criteria and expect back data in a somewhat timely manner.
 
@@ -54,7 +54,7 @@ There are roughly 50 different get request types that you can use and again for 
 | ------------- |-------------| -----| -------:|
 | GET statuses/user_timeline      | Statuses | Returns the most recent statuses posted from the user specified. | 900 |
 | GET statuses/retweets/:id      | Statuses | Returns the retweets of the given tweet. | 75 |
-| GET followers/list | Followers | Returns a user’s followers or-dered in which they were added. | 15 |
+| GET followers/list | Followers | Returns a user's followers or-dered in which they were added. | 15 |
 
 #### Introduction to Tweepy
 
@@ -63,7 +63,7 @@ Tweepy is an open source python package developed to easy the interaction and us
 | **URL based request** |
 | GET https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=BrewersAssoc&count=2 |
 | **Tweepy equivalent**|
-| <pre><code data-trim class="python"> API.user_timeline(screen_name=”BrewersAssoc”)</code></pre>|
+| <pre><code data-trim class="python"> API.user_timeline(screen_name="BrewersAssoc")</code></pre>|
 
 To be able to use Tweepy (or in essence any form of the Twitter API) you must first create an endpoint to the API where OAuth-based authorization can be procured, this can be done fairly simply by visiting https://apps.twitter.com/. Once done, you can then use the four tokens provided (consumer key, consumer secret, access token, and access token secret) to start querying the API. Data that is returned will be in JavaScript Object Notation or JSON format. Luckily when using Tweepy, Python automatically identifies this as a dictionary which is a built-in type (Twitter, Inc., 2018).
 
@@ -93,7 +93,7 @@ For the majority of this project (including the historical analysis, and the tag
 
 This phase of the project will look into the interconnectedness between users that retweet BA tweets. Again information into the ins and outs of the thought process and analysis will be described in depth in a later blog post, for now, we will simply describe the process of procuring the additional data necessary.
 
-In order to see interconnectedness between users that retweet, we must first be able to identify who retweeted. Again Tweepy and the Twitter API has a built-in function to do just this. As you many recall in an earlier table, there is a get request (GET status-es/retweets/:id) that returns the retweets of the given tweet. Obviously just knowing who retweeted will not be enough for this analysis, in addition, we must gather all users that are followers of those who retweeted, to do so we can use the final get request in the same table, GET followers/list. This will give us of a list of a user’s followers ordered in which they were added. These two requests will be running for only a small subset of the data as these requests, and more specifically the followers request, are regulated by Twitter at a more extreme rate. 
+In order to see interconnectedness between users that retweet, we must first be able to identify who retweeted. Again Tweepy and the Twitter API has a built-in function to do just this. As you many recall in an earlier table, there is a get request (GET status-es/retweets/:id) that returns the retweets of the given tweet. Obviously just knowing who retweeted will not be enough for this analysis, in addition, we must gather all users that are followers of those who retweeted, to do so we can use the final get request in the same table, GET followers/list. This will give us of a list of a user's followers ordered in which they were added. These two requests will be running for only a small subset of the data as these requests, and more specifically the followers request, are regulated by Twitter at a more extreme rate. 
 
 The data subset that will be investigated will be discussed in more depth later along with a hypothesis to why the Twitter API imposes higher limits to these request types. The additional data gathered for the brand advocate investigation phase can also be seen within the ERD above as the tables Retweeted By Users and Followers of Retweet Users.
 
