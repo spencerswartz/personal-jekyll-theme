@@ -63,7 +63,7 @@ Tweepy is an open source python package developed to easy the interaction and us
 |: **URL based request** :|
 | GET https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=BrewersAssoc&count=2 |
 |: **Tweepy equivalent** :|
-| <pre><code data-trim class="python"> API.user_timeline(screen_name="BrewersAssoc")</code></pre>|
+| <code data-trim class="python"> API.user_timeline(screen_name="BrewersAssoc")</code>|
 
 To be able to use Tweepy (or in essence any form of the Twitter API) you must first create an endpoint to the API where OAuth-based authorization can be procured, this can be done fairly simply by visiting https://apps.twitter.com/. Once done, you can then use the four tokens provided (consumer key, consumer secret, access token, and access token secret) to start querying the API. Data that is returned will be in JavaScript Object Notation or JSON format. Luckily when using Tweepy, Python automatically identifies this as a dictionary which is a built-in type (Twitter, Inc., 2018).
 
@@ -79,13 +79,13 @@ Once the original data requests are pulled another high powered Python package c
 
 For the most part, Pandas does well with the downloaded data from the API, we have the ability to create a CSV file where each row represents an individual tweet. Most of the information that is required for this project is easily accessible within the rows, but sadly there are some additional data hiding within some of the columns of this data. In the screenshot below we can see that there are complex data types within the entities column of this table, it includes information related to hashtags, URLs, user mentions and more, all of which are important to the rest of this project.
 
-![DataFrame Screenshot](../img/DataFrameScreenshot.png?raw=true)
+![DataFrame Screenshot](/img/DataFrameScreenshot.png){:class="img-responsive"}
 
 #### Creating Sub-tables
 
 Fortunately, there is an easy fix to this problem, Python is able to identify this sub table structure as a dictionary with this we can create additional supporting tables to represent this data. Specifically, we can break this entities column out to four separate tables that are of use for this project including URLs, Media, Hashtags, and User Mentions and drop the rest. The relations of these tables are many-to-one to the original Tweets table and can be seen on the entity relationship diagram or ERD in below.
 
-![ERD](../img/ERD.png?raw=true)
+![ERD](/img/ERD.png){:class="img-responsive"}
 
 For the majority of this project (including the historical analysis, and the tagging recommendation engine (to be discussed in a later blog post)) these data tables will be all that we need. That leaves us with needing to gather data for just one additional phase of the project and that is the brand advocate investigation phase (again to be discussed in more detail at a later time).
 
