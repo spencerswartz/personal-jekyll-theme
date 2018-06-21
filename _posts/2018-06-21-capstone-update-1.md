@@ -16,11 +16,11 @@ I will do my best to get the entire series out in the next couple of months. Thi
 
 If you recall from my innitial post my entire capstone project revolves around the Twitter accounts for The Brewers Association (BA). The group actualy has three seperate accounts all targeting diffrent customers of BA you can see the handles and there description in the following table. Based on the descriptions of the handles we can start to understand the three audiences that BA is targeting. The @BrewersAssoc and @HomebrewAssoc handles are obviously targeting the members of the two organizations that are a part of BA. It makes sense to target them separately although they are both interested in the similar topic because more often than not laws governing members of both institutions are quite different at both the state and national level. The third, @craftbeerdotcom, is another example of BA market-ing directly to their customers' customer. This handle is quite successful with over 56,000 followers and 10,000 tweets.
 
-| Twitter Handle        | Description           |
-| ------------- |-------------| 
-| [@BrewersAssoc](https://twitter.com/BrewersAssoc)         | Brewers Association is the not-for-profit trade assoc. dedicated to small & independent American brewers, their beers & the community of brewing enthusiasts. |
-| [@HomebrewAssoc](https://twitter.com/HomebrewAssoc)       | The American Homebrewers Association (AHA) is committed to promoting the community of homebrewers & empowering homebrewers to make the best beers in the world.      |
-| [@craftbeerdotcom](https://twitter.com/craftbeerdotcom)   | Bringing the stories of America's small & independent craft brewers to life for beer lovers. Created by the Brewers Associa-tion.      |
+| Twitter Handle        || Description           |
+| ------------- ||-------------| 
+| [@BrewersAssoc](https://twitter.com/BrewersAssoc)         || Brewers Association is the not-for-profit trade assoc. dedicated to small & independent American brewers, their beers & the community of brewing enthusiasts. |
+| [@HomebrewAssoc](https://twitter.com/HomebrewAssoc)       || The American Homebrewers Association (AHA) is committed to promoting the community of homebrewers & empowering homebrewers to make the best beers in the world.      |
+| [@craftbeerdotcom](https://twitter.com/craftbeerdotcom)   || Bringing the stories of America's small & independent craft brewers to life for beer lovers. Created by the Brewers Associa-tion.      |
 
 # Data Gathering
 
@@ -60,9 +60,9 @@ There are roughly 50 different get request types that you can use and again for 
 
 Tweepy is an open source python package developed to easy the interaction and use of the Twitter API within Python. The package simplifies request calls to a more standard Python notation while allowing the returned data to be alterable within other packages. Below is an example of a standard URL based get request for the most recent tweets by @BrewersAssoc along with a corresponding Tweepy based request (Roesslein, 2009). (What can I say... I'm a data guy, I like tables...)
 
-| **URL based request** |
+|: **URL based request** :|
 | GET https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=BrewersAssoc&count=2 |
-| **Tweepy equivalent**|
+|: **Tweepy equivalent** :|
 | <pre><code data-trim class="python"> API.user_timeline(screen_name="BrewersAssoc")</code></pre>|
 
 To be able to use Tweepy (or in essence any form of the Twitter API) you must first create an endpoint to the API where OAuth-based authorization can be procured, this can be done fairly simply by visiting https://apps.twitter.com/. Once done, you can then use the four tokens provided (consumer key, consumer secret, access token, and access token secret) to start querying the API. Data that is returned will be in JavaScript Object Notation or JSON format. Luckily when using Tweepy, Python automatically identifies this as a dictionary which is a built-in type (Twitter, Inc., 2018).
@@ -79,13 +79,13 @@ Once the original data requests are pulled another high powered Python package c
 
 For the most part, Pandas does well with the downloaded data from the API, we have the ability to create a CSV file where each row represents an individual tweet. Most of the information that is required for this project is easily accessible within the rows, but sadly there are some additional data hiding within some of the columns of this data. In the screenshot below we can see that there are complex data types within the entities column of this table, it includes information related to hashtags, URLs, user mentions and more, all of which are important to the rest of this project.
 
-![DataFrame Screenshot](img/DataFrameScreenshot.png?raw=true)
+![DataFrame Screenshot](../img/DataFrameScreenshot.png?raw=true)
 
 #### Creating Sub-tables
 
 Fortunately, there is an easy fix to this problem, Python is able to identify this sub table structure as a dictionary with this we can create additional supporting tables to represent this data. Specifically, we can break this entities column out to four separate tables that are of use for this project including URLs, Media, Hashtags, and User Mentions and drop the rest. The relations of these tables are many-to-one to the original Tweets table and can be seen on the entity relationship diagram or ERD in below.
 
-![ERD](img/ERD.png?raw=true)
+![ERD](../img/ERD.png?raw=true)
 
 For the majority of this project (including the historical analysis, and the tagging recommendation engine (to be discussed in a later blog post)) these data tables will be all that we need. That leaves us with needing to gather data for just one additional phase of the project and that is the brand advocate investigation phase (again to be discussed in more detail at a later time).
 
