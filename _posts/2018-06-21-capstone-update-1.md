@@ -16,13 +16,13 @@ I will do my best to get the entire series out in the next couple of months. Thi
 
 If you recall from my innitial post my entire capstone project revolves around the Twitter accounts for The Brewers Association (BA). The group actualy has three seperate accounts all targeting diffrent customers of BA you can see the handles and there description in the following table. Based on the descriptions of the handles we can start to understand the three audiences that BA is targeting. The @BrewersAssoc and @HomebrewAssoc handles are obviously targeting the members of the two organizations that are a part of BA. It makes sense to target them separately although they are both interested in the similar topic because more often than not laws governing members of both institutions are quite different at both the state and national level. The third, @craftbeerdotcom, is another example of BA market-ing directly to their customers' customer. This handle is quite successful with over 56,000 followers and 10,000 tweets.
 
-<p style="text-align: center;">
+<center>
 | Twitter Handle        || Description           |
 | ------------- ||-------------| 
 | [@BrewersAssoc](https://twitter.com/BrewersAssoc)         || Brewers Association is the not-for-profit trade assoc. dedicated to small & independent American brewers, their beers & the community of brewing enthusiasts. |
 | [@HomebrewAssoc](https://twitter.com/HomebrewAssoc)       || The American Homebrewers Association (AHA) is committed to promoting the community of homebrewers & empowering homebrewers to make the best beers in the world.      |
 | [@craftbeerdotcom](https://twitter.com/craftbeerdotcom)   || Bringing the stories of America's small & independent craft brewers to life for beer lovers. Created by the Brewers Associa-tion.      |
-<\p>
+<\center>
 
 # Data Gathering
 
@@ -44,34 +44,34 @@ The rate limits for get requests at the free tier are dependent on the resource 
 
 Resource families define the different types of data that will be returned within the get request, there are twelve different resource families, although for this project we are only interested in three including users, statuses, and followers. In the table below we can see a subset of the information returned for each of these families. For the most part, one can assume that rate limits are imposed based on the resource family type although a more accurate statement would be that it is based the on the individual request type (Twitter, 2018).
 
-<p style="text-align: center;">
+<center>
 | Resource Family | Relevant Data Returned |
 | ------ | ------- |
 | Users | Name <br>Screen Name (Handel) <br>Followers Count |
 | Statuses | Id <br>Text <br>Entities (hashtags, URLs, user mentions, etc.) <br>Retweet Count <br>Favorite Count |
 | Followers | List of users type including all followers of a queried user |
-<\p>
+<\center>
 
 There are roughly 50 different get request types that you can use and again for this project we are only interested in a limited set, which can be found in again in the table below. Included in this table are the returned resource family, a description of the request, and the associated number of requests allowed per 15-minute window.
 
-<p style="text-align: center;">
+<center>
 | Request       | Resource Family           | Description  | Request/Window |
 | ------------- |-------------| -----| -------:|
 | GET statuses/user_timeline      | Statuses | Returns the most recent statuses posted from the user specified. | 900 |
 | GET statuses/retweets/:id      | Statuses | Returns the retweets of the given tweet. | 75 |
 | GET followers/list | Followers | Returns a user's followers or-dered in which they were added. | 15 |
-<\p>
+<\center>
 
 #### Introduction to Tweepy
 
 Tweepy is an open source python package developed to easy the interaction and use of the Twitter API within Python. The package simplifies request calls to a more standard Python notation while allowing the returned data to be alterable within other packages. Below is an example of a standard URL based get request for the most recent tweets by @BrewersAssoc along with a corresponding Tweepy based request (Roesslein, 2009). (What can I say... I'm a data guy, I like tables...)
 
-<p style="text-align: center;">
+<center>
 |: **URL based request** :|
 | GET https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=BrewersAssoc&count=2 |
 |: **Tweepy equivalent** :|
 | <code data-trim class="python"> API.user_timeline(screen_name="BrewersAssoc")</code>|
-<\p>
+<\center>
 
 To be able to use Tweepy (or in essence any form of the Twitter API) you must first create an endpoint to the API where OAuth-based authorization can be procured, this can be done fairly simply by visiting https://apps.twitter.com/. Once done, you can then use the four tokens provided (consumer key, consumer secret, access token, and access token secret) to start querying the API. Data that is returned will be in JavaScript Object Notation or JSON format. Luckily when using Tweepy, Python automatically identifies this as a dictionary which is a built-in type (Twitter, Inc., 2018).
 
