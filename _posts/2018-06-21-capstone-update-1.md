@@ -67,7 +67,7 @@ There are roughly 50 different get request types that you can use and again for 
 Tweepy is an open source python package developed to easy the interaction and use of the Twitter API within Python. The package simplifies request calls to a more standard Python notation while allowing the returned data to be alterable within other packages. Below is an example of a standard URL based get request for the most recent tweets by @BrewersAssoc along with a corresponding Tweepy based request (Roesslein, 2009). (What can I say... I'm a data guy, I like tables...)
 
 
-|: **URL based request** :| |: **Tweepy equivalent** :|
+| **URL based request** | | **Tweepy equivalent** |
 | https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=BrewersAssoc&count=2 | | <code data-trim class="python"> API.user_timeline(screen_name="BrewersAssoc")</code>|
 
 
