@@ -16,13 +16,13 @@ I will do my best to get the entire series out in the next couple of months. Thi
 
 If you recall from my innitial post my entire capstone project revolves around the Twitter accounts for The Brewers Association (BA). The group actualy has three seperate accounts all targeting diffrent customers of BA you can see the handles and there description in the following table. Based on the descriptions of the handles we can start to understand the three audiences that BA is targeting. The @BrewersAssoc and @HomebrewAssoc handles are obviously targeting the members of the two organizations that are a part of BA. It makes sense to target them separately although they are both interested in the similar topic because more often than not laws governing members of both institutions are quite different at both the state and national level. The third, @craftbeerdotcom, is another example of BA market-ing directly to their customers' customer. This handle is quite successful with over 56,000 followers and 10,000 tweets.
 
-<center>
+
 | Twitter Handle        || Description           |
 | ------------- ||-------------| 
 | [@BrewersAssoc](https://twitter.com/BrewersAssoc)         || Brewers Association is the not-for-profit trade assoc. dedicated to small & independent American brewers, their beers & the community of brewing enthusiasts. |
 | [@HomebrewAssoc](https://twitter.com/HomebrewAssoc)       || The American Homebrewers Association (AHA) is committed to promoting the community of homebrewers & empowering homebrewers to make the best beers in the world.      |
 | [@craftbeerdotcom](https://twitter.com/craftbeerdotcom)   || Bringing the stories of America's small & independent craft brewers to life for beer lovers. Created by the Brewers Associa-tion.      |
-<\center>
+
 
 # Data Gathering
 
