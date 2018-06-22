@@ -68,7 +68,7 @@ Tweepy is an open source python package developed to easy the interaction and us
 
 
 |: **URL based request** :| |: **Tweepy equivalent** :|
-| GET https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=BrewersAssoc&count=2 | | <code data-trim class="python"> API.user_timeline(screen_name="BrewersAssoc")</code>|
+| https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=BrewersAssoc&count=2 | | <code data-trim class="python"> API.user_timeline(screen_name="BrewersAssoc")</code>|
 
 
 To be able to use Tweepy (or in essence any form of the Twitter API) you must first create an endpoint to the API where OAuth-based authorization can be procured, this can be done fairly simply by visiting https://apps.twitter.com/. Once done, you can then use the four tokens provided (consumer key, consumer secret, access token, and access token secret) to start querying the API. Data that is returned will be in JavaScript Object Notation or JSON format. Luckily when using Tweepy, Python automatically identifies this as a dictionary which is a built-in type (Twitter, Inc., 2018).
