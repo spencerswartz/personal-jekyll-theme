@@ -23,6 +23,7 @@ If you recall from my innitial post my entire capstone project revolves around t
 | [@HomebrewAssoc](https://twitter.com/HomebrewAssoc)       || The American Homebrewers Association (AHA) is committed to promoting the community of homebrewers & empowering homebrewers to make the best beers in the world.      |
 | [@craftbeerdotcom](https://twitter.com/craftbeerdotcom)   || Bringing the stories of America's small & independent craft brewers to life for beer lovers. Created by the Brewers Associa-tion.      |
 
+<br>
 
 # Data Gathering
 
@@ -51,6 +52,8 @@ Resource families define the different types of data that will be returned withi
 | Statuses | Id <br>Text <br>Entities (hashtags, URLs, user mentions, etc.) <br>Retweet Count <br>Favorite Count |
 | Followers | List of users type including all followers of a queried user |
 
+<br>
+
 There are roughly 50 different get request types that you can use and again for this project we are only interested in a limited set, which can be found in again in the table below. Included in this table are the returned resource family, a description of the request, and the associated number of requests allowed per 15-minute window.
 
 
@@ -60,6 +63,8 @@ There are roughly 50 different get request types that you can use and again for 
 | GET statuses/retweets/:id      | Statuses | Returns the retweets of the given tweet. | 75 |
 | GET followers/list | Followers | Returns a user's followers or-dered in which they were added. | 15 |
 
+<br>
+
 #### Introduction to Tweepy
 
 Tweepy is an open source python package developed to easy the interaction and use of the Twitter API within Python. The package simplifies request calls to a more standard Python notation while allowing the returned data to be alterable within other packages. Below is an example of a standard URL based get request for the most recent tweets by @BrewersAssoc along with a corresponding Tweepy based request (Roesslein, 2009). (What can I say... I'm a data guy, I like tables...)
@@ -68,9 +73,9 @@ Tweepy is an open source python package developed to easy the interaction and us
 | **URL based request** | | **Tweepy equivalent** |
 | https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=BrewersAssoc&count=2 | | <code data-trim class="python"> API.user_timeline(screen_name="BrewersAssoc")</code>|
 
+<br>
 
-
-<br>To be able to use Tweepy (or in essence any form of the Twitter API) you must first create an endpoint to the API where OAuth-based authorization can be procured, this can be done fairly simply by visiting https://apps.twitter.com/. Once done, you can then use the four tokens provided (consumer key, consumer secret, access token, and access token secret) to start querying the API. Data that is returned will be in JavaScript Object Notation or JSON format. Luckily when using Tweepy, Python automatically identifies this as a dictionary which is a built-in type (Twitter, Inc., 2018).
+To be able to use Tweepy (or in essence any form of the Twitter API) you must first create an endpoint to the API where OAuth-based authorization can be procured, this can be done fairly simply by visiting https://apps.twitter.com/. Once done, you can then use the four tokens provided (consumer key, consumer secret, access token, and access token secret) to start querying the API. Data that is returned will be in JavaScript Object Notation or JSON format. Luckily when using Tweepy, Python automatically identifies this as a dictionary which is a built-in type (Twitter, Inc., 2018).
 
 ### Data Request and Manipulations
 
