@@ -55,7 +55,7 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "MS in Data Science Candidate"
+  - text: "MS in Data Science Graduate"
   - text: "Helping people see and understand their data"
   - text: "“Formulas are my formula for mula” - Ben Wyatt "
 # me-img: "/img/jetpacktocat.png"
@@ -163,7 +163,7 @@ email: "spencer.swartz@gmail.com"
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "Spencer Swartz is a Data Scientist living in Iowa City, Iowa. When he's not playing around with data, he's probably trying out a new craft beer, or hanging with his wife Samantha and dog, Finn!"
+author_blurb: "Spencer Swartz is a Data Scientist that reciently moved to Nashville. When he's not playing around with data, he's probably trying out a new craft beer, or hanging with his wife Samantha and dog, Finn!"
 author_blurb_image: "/img/spencer_burned.png"
 
 ##################
