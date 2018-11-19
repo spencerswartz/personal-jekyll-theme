@@ -131,12 +131,15 @@ syntax-highlight: True
 ############
 
 events:
+  - image: "/img/timeline/TSC-Logo.png"
+    date: "August 2018"
+    description: "Marketing Data Analyst @ Tractor Supply"
+  - image: "/img/timeline/ACT_logo.png"
+    date: "May 2014 - July 2018"
+    description: "Data Analyst @ ACT"
   - image: "/img/timeline/UWlax-seal.png"
     date: "May 2018"
     description: "MS - Data Science - University of Wisconsin - La Crosse"
-  - image: "/img/timeline/ACT_logo.png"
-    date: "May 2014 - Present"
-    description: "Data Analyst @ ACT"
   - image: "/img/timeline/UI-seal.png"
     date: "May 2014"
     description: "BA - Infromatics - University of Iowa"
